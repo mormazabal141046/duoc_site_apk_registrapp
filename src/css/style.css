@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+nav{
+    background: #e3f2fd;
+    /* background: linear-gradient(180deg, rgba(50,162,235,1) 0%, rgba(0,98,186,1) 50%, #004982 100%); */
+}
+.content-page{
+    /* height: calc(100vh - 200px); */
+    /* background: #994343; */
+}
+footer{
+    height: 100px;
+    background:#e3f2fd;
+}
+.content-img{
+    width: 55%;
+}
+.content-img img{
+    width: 50%;
+}
+.content-text{
+    width: 45%;
+}
+.content-text img{
+    width: 200px;
+}
+.content-text p{
+    font-size: 22px;
+}
+.btn-download{
+    padding: 10px 25px;
+    border-radius: 25px;
+    border:2px solid #ff0055;
+    color: #ff0055;
+    text-decoration: none;
+}
+.btn-download:hover{
+    background: #ff0055;
+    color: white;
+}
