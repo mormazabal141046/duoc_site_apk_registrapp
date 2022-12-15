@@ -2,10 +2,10 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 nav{
-    background: #e3f2fd;
+    background: #f6bb32;
     /* background: linear-gradient(180deg, rgba(50,162,235,1) 0%, rgba(0,98,186,1) 50%, #004982 100%); */
 }
 .content-page{
@@ -14,16 +14,17 @@ nav{
 }
 footer{
     height: 100px;
-    background:#e3f2fd;
+    background:#f6bb32;
 }
 .content-img{
-    width: 55%;
+    width: 100%;
 }
 .content-img img{
-    width: 50%;
+    /* width: 30%; */
+    border-radius: 25px;
 }
 .content-text{
-    width: 45%;
+    width: 100%;
 }
 .content-text img{
     width: 200px;
@@ -41,4 +42,7 @@ footer{
 .btn-download:hover{
     background: #ff0055;
     color: white;
+}
+.img-qr{
+    width: 250px;
 }

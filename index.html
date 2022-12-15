@@ -8,11 +8,11 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
@@ -22,7 +22,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex justify-content-center align-items-center align-content-center" href="#">
-                    <img src="/src/assets/img/logo.png" alt="Logo" width="60" height="60">
+                    <img src="./src/assets/img/logo.png" alt="Logo" width="60" height="60">
                     <span class="ms-3">Web RegistrApp</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,10 +31,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link active" aria-current="page" href="./mis-clases.html">Mis Clases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Descarga la App</a>
                         </li>
                     </ul>
                 </div>
@@ -42,29 +45,31 @@
         </nav>
         <div style="height: 150px; overflow: hidden;" >
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #e3f2fd;"></path>
+                <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #f6bb32;"></path>
             </svg>
         </div>
         <div class="container-fluid content-page">
-            <div class="d-flex flex-row justify-content-between align-items-center alig-content-center flex-wrap py-5">
-                <div class="content-img d-flex flex-column justify-content-center align-items-center align-content-center">
-                    <img src="/src/assets/img/logo.png" alt="">
-                    <h2>Nueva App para Registrar tu Asistencia</h2>
+            <div class="row-md col d-flex flex-column flex-md-row justify-content-between align-items-center alig-content-center flex-wrap py-5">
+                <div class="col content-img d-flex flex-column justify-content-center align-items-center align-content-center">
+                    <h2 class="mb-5">Nueva App para Registrar tu Asistencia</h2>
+                    <img src="./src/assets/img/screen/Menu.png" alt="" class="w-md-25 w-sm-50">
                 </div>
-                <div class="content-text  d-flex flex-column justify-content-center align-items-center align-content-center px-5">
-                    <img src="/src/assets/img/qr-scan.png" alt="" class="mb-3">
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nihil ab eius maiores voluptas voluptates quae, quod eveniet deserunt! Sunt quasi, 
-                        voluptatem modi vel reprehenderit sapiente dolorum ullam. Accusantium, et sit.
-                    </p>
-                    <a href="" class="btn-download mt-5">DESCARGA AQUI</a>
+                <div class="col content-text d-flex flex-column justify-content-center align-items-center align-content-center px-2 px-md-5 pt-5 pt-md-0">
+                    <div class="d-flex flex-column-reverse flex-md-column justify-content-center align-items-center align-content-center">
+                        <img src="./src/assets/img/qr-scan.png" alt="" class="mb-5 mt-4 mt-md-0">
+                        <p class="text-center">RegistrApp es la nueva Aplicación Móvil para el registro de asistencia en tu escuela o casa de estudio superior.<br><br>
+                            Esta nueva App permite a cada alumno, mediante el escaneo a un código QR, poder dejar registro de su asistencia a clases.
+                        </p>
+                    </div>
+                    <h5><strong>¡Comienza a usar RegistrApp!</strong></h5>
+                    <a href="registrapp-release.apk" class="btn-download mt-5" download="APK_RegistrApp">DESCARGA AQUI</a>
                     <i class="fa-regular fa-hand-pointer animate__animated animate__heartBeat animate__infinite" style="font-size:30px;"></i>
                 </div>
             </div>
         </div>
         <div style="height: 150px; overflow: hidden;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #e3f2fd;"></path>
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #f6bb32;"></path>
             </svg>
         </div>
         <footer class="d-flex justify-content-center align-items-center align-content-center">
